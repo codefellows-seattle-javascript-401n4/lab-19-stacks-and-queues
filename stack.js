@@ -1,7 +1,15 @@
 'use strict';
 
 module.exports = class Stack {
-  constructor(){
-    this.Stack = new Array;
+  constructor() {
+    this.stack = [];
   }
-};
+  
+  push(value) {
+    this.stack.push(value);
+  }
+  
+  pop() {
+  	return this.stack.pop();
+  }
+}

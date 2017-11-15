@@ -4,8 +4,10 @@
 const Stack = require('./stack.js');
 
 describe('STACK', () => {
-  test('constructor creates an empty array', () => {
-    let stack = new Stack();
-    expect(typeof stack).toBe('array');
+  let stack = new Stack();
+  
+  test('push adds a value', () => {
+    stack.push(1);
+    expect(stack[0]).toEqual(1);
   });
 });

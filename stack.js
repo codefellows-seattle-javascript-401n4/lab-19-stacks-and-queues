@@ -2,6 +2,6 @@
 
 module.exports = class Stack {
   constructor(){
-    return new Array;
+    this.Stack = new Array;
   }
 };

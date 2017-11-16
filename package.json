@@ -1,0 +1,26 @@
+{
+  "name": "lab-19-stacks-and-queues",
+  "version": "1.0.0",
+  "description": "![cf](http://i.imgur.com/7v5ASc8.png) lab 20 - Stacks and Queues Data Structures ====",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codefellows-seattle-javascript-401n4/lab-19-stacks-and-queues.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codefellows-seattle-javascript-401n4/lab-19-stacks-and-queues/issues"
+  },
+  "homepage": "https://github.com/codefellows-seattle-javascript-401n4/lab-19-stacks-and-queues#readme",
+  "devDependencies": {
+    "jest": "^21.2.1"
+  }
+}

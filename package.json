@@ -29,5 +29,8 @@
   "bugs": {
     "url": "https://github.com/namgungssi/lab-19-stacks-and-queues/issues"
   },
-  "homepage": "https://github.com/namgungssi/lab-19-stacks-and-queues#readme"
+  "homepage": "https://github.com/namgungssi/lab-19-stacks-and-queues#readme",
+  "directories": {
+    "test": "test"
+  }
 }

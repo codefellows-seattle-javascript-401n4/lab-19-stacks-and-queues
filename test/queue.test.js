@@ -18,6 +18,7 @@ describe('queue test', () => {
     newQueue.enqueue(1);
     newQueue.enqueue(3);
     expect(newQueue.length).toBe(2);
+    console.log(newQueue.length);
     expect(newQueue[1]).toBe(3);
     // console.log(newQueue);
   });

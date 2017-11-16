@@ -4,6 +4,12 @@ const stackFacade = require('../lib/stack-facade.js');
 
 describe('Stack tests', function(){
 
+  test('CONSTRUCTOR should make new array', function(){
+    let stackTest = new stackFacade();
+
+    expect(stackTest.stackFacade.stack).toEqual([]);
+  });
+
   test('PUSH should correctly insert value to end of stack', function(){
     let stackTest = new stackFacade();
 

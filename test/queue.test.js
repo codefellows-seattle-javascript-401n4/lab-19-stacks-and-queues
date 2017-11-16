@@ -1,6 +1,5 @@
 'use strict';
 
-//const Queue = require("../queue");
 const Queue = require("../queue");
 
 describe("Queue", () => {

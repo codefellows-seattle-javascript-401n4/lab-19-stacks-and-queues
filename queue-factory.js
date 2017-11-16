@@ -6,7 +6,7 @@ module.exports = () => {
   return {
     enqueue: function(value) {
       queue.enqueue(value);
-    }
+    },
     dequeue: function() {
       return queue.dequeue(value);
     }

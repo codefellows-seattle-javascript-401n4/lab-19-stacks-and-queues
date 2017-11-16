@@ -1,5 +1,6 @@
 'use strict';
 
+//this is a function, not a class, so it must be called
 module.exports = () => {
   let stack = new Array();
 
@@ -8,7 +9,7 @@ module.exports = () => {
       stack.push(value);
     },
     pop: function() {
-      return stack.pop(value);
+      return stack.pop();
     }
-  }
+  };
 };

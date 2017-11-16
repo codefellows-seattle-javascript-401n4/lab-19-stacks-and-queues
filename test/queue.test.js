@@ -1,5 +1,6 @@
 'use strict';
 
+//const Queue = require("../queue");
 const Queue = require("../queue");
 
 describe("Queue", () => {
@@ -9,7 +10,6 @@ describe("Queue", () => {
       testQueue.enqueue('x');
       testQueue.enqueue('y');
       testQueue.enqueue('z');
-      console.log('testQueue' + testQueue);
       expect(testQueue.dequeue()).toEqual('x');
       expect(testQueue.dequeue()).toEqual('y');
       expect(testQueue.dequeue()).toEqual('z');

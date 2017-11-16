@@ -1,6 +1,23 @@
 ![cf](http://i.imgur.com/7v5ASc8.png) lab 20 - Stacks and Queues Data Structures
 ====
 
+## NOTES & INSTRUCTIONS FOR RUNNING MY LAB  
+
+#to initialize npm and install jest for testing run this command in the terminal
+$ npm init --y && npm i --save-dev jest
+//in the package.json, specifying jest as a tool for testing
+//default:
+"scripts": {
+  "test": "echo \"Error: no test specified\" && exit 1"
+},
+//updated:
+"scripts": {
+  "test": "jest"
+},
+
+
+
+
 ## To Submit this Assignment
   * fork this repository
   * write all of your code in a directory named `lab-` + `<your name>` **e.g.** `lab-duncan`

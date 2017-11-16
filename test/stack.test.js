@@ -23,6 +23,7 @@ describe('Stacks', () => {
             testStack.push(2);
             testStack.push(3);
 
+            expect(testStack).not.toBe.empty;
             expect(testStack.pop()).toEqual(3);
 
         });

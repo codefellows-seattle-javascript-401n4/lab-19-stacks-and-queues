@@ -2,51 +2,53 @@
 
 
 
-const Queue = require('../lib/queue/queue.js');
 const expect = require('expect');
-
+const Queue = require('../lib/queue/queue.js');
+//const testQueue = new Queue(); < can i just call it here instead of inputing it for every
 
 
 describe('queue testing', () => {
 
-    it('should return 0 when done', () => {
-      let newQueue = new Queue();
-      expect(newQueue.length).toBe(null);
+  it('should return 0 when done', () => {
+    let testQueue = new Queue();
+    expect(testQueue.length).toBe(0);
+    done();
+  });
 
-    });
 
-    it('should return 3, 2, null, 1', () => {
-      let newQueue = new Queue();
+  it('should return 1,2,3', () => {
+    let testQueue = new Queue();
+    testQueue.enqueue(1);
+    testQueue.enqueue(3);
 
-      newQueue.enqueue(1);
-      newQueue.enqueue(3);
-      expect(newQueue.length).toBe(2);
-      expect(newQueue[1].toBe(3);
-      done();
-      
-    });
-
-    it('should return 2,3', () => {
-      let newQueue = new Queue();
-
-      newQueue.enqueue(1);
-      newQueue.enqueue(3);
-      expect(newQueue.dequeue()).toBe(1);
-      expect(newQueue.dequeue()).toBe(3);
-      console.log(newQueue);
-      expect(newQueue.dequeue()).toBe(undefined);
-      done();
-
-    });
+    expect(testQueue.length).toBe(2);
+    expect(testQueue[1]).toBe(3);
+    done();
 
   });
 
-    it('should return first item', (undefined) => {
-      let firstSlot = newQueue.dequeue();
 
-      expect(firstSlot).toEqual(1);
-      expect(newQueue).toEqual({"queue": [2,3]});
-      done();
+  it('Should have correctly ordered the 3 things we pushed into the stack', (done) => {
+    let testQueue = new Queue();
+    testQueue.enqueue(1);
+    testQueue.enqueue(3);
 
-    });
+    expect(testQueue.length).toBe(2);
+    expect(testQueue[1]).toBe(3);
+
   });
+
+
+  it('Should dequeue log 1,2,3', () => {
+    let testQueue = new Queue();
+    queueTest.enqueue(1);
+    queueTest.enqueue(3);
+
+    expect(testQueue.length).toEqual(2);
+    expect(testQueue._array[0]).toEqual("hello");
+    done();
+
+  });
+
+
+});

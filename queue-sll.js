@@ -1,8 +1,11 @@
 'use strict';
 
-let queueSll = () => {
-  let queue = null;
+let queueSll = (value) => ({next:null, value});
 
+module.exports = () => {
+  console.log(`hi`);
+  let queue = null;
+  console.log(`queue before returning`, queue);
   return {
     enqueue: function(value) {
       if(!queue) {
@@ -21,4 +24,5 @@ let queueSll = () => {
       return value;
     }
   }
+  console.log(`queu after returning: `, queue);
 };

@@ -11,7 +11,7 @@ describe('queue testing', () => {
 
   it('should return 0 when done', () => {
     let testQueue = new Queue();
-    expect(testQueue.length).toBe(0);
+    expect(testQueue.length).toEqual(0);
 
   });
 

@@ -15,7 +15,7 @@ describe('queue testing', () => {
   });
 
 
-  it('should return 1:3, length:2, head:null, null:1', () => {
+  it('should return 3, 2, null, null : 1', () => {
     let newQueue = new Queue();
 
     newQueue.enqueue(1);

@@ -2,7 +2,7 @@
 
 
 
-const Queue = require('../lib/queue');
+const Queue = require('../lib/queue/queue.js');
 
 
 describe('queue testing', () => {
@@ -22,7 +22,7 @@ describe('queue testing', () => {
     newQueue.enqueue(3);
     expect(newQueue.length).toBe(2);
       console.log(newQueue.length);
-    expect(newQueue.enqueue[1].toBe(3);
+    expect(newQueue.enqueue[1]).toBe(3);
 
   });
 
@@ -39,8 +39,3 @@ describe('queue testing', () => {
 
   });
 });
-
-
-
-/*
-Similarly, a queue data structure follows a "First In First Out" policy (as in the case of a normal queue when we stand in line at the counter), where the first element is pushed into the queue or "Enqueued" and the same element when it has to be removed from the queue is "Dequeued"..

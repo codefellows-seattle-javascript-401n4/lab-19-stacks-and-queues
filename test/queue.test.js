@@ -12,7 +12,7 @@ describe('queue testing', () => {
   it('should return 0 when done', () => {
     let testQueue = new Queue();
     expect(testQueue.length).toBe(0);
-    done();
+
   });
 
 
@@ -23,7 +23,6 @@ describe('queue testing', () => {
 
     expect(testQueue.length).toBe(2);
     expect(testQueue[1]).toBe(3);
-    done();
 
   });
 
@@ -46,7 +45,6 @@ describe('queue testing', () => {
 
     expect(testQueue.length).toEqual(2);
     expect(testQueue._array[0]).toEqual("hello");
-    done();
 
   });
 

@@ -2,7 +2,7 @@
 
 const Queue = require("../queue");
 
-describe("Queue", () => {
+describe('Queue', () => {
   it('should implement first in first out functionality', () => {
     let testQueue = new Queue();
 

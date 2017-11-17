@@ -5,10 +5,10 @@ module.exports = () => {
 
   return {
     enqueue: function(value) {
-      queue.enqueue(value);
+      queue.push(value);
     },
     dequeue: function() {
-      return queue.dequeue(value);
+      return queue.shift();
     }
   }
 };

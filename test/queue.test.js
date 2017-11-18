@@ -10,7 +10,7 @@ const expect = require('expect');
 describe('queue testing',() => {
 
   it('should return 1 when done',() => {
-    let testQueue = new Queue(),
+    let testQueue = new Queue();
     expect(testQueue.length).toBe(1);
 
   });

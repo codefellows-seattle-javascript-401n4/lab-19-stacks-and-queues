@@ -2,16 +2,16 @@
 
 
 
+const Queue = require('../lib/queue/_queue.js');
 const expect = require('expect');
-const Queue = require('../lib/queue/queue.js');
 //const testQueue = new Queue(); < can i just call it here instead of inputing it for every
 
 
-describe('queue testing', () => {
+describe('queue testing',() => {
 
-  it('should return 0 when done', () => {
-    let testQueue = new Queue();
-    expect(testQueue.length).toEqual(0);
+  it('should return 1 when done',() => {
+    let testQueue = new Queue(),
+    expect(testQueue.length).toBe(1);
 
   });
 

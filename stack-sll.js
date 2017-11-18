@@ -22,5 +22,5 @@ module.exports = () => {
       stack = stack.next;
       return value;
     }
-  },
+  };
 };

@@ -11,10 +11,9 @@ describe('queue testing',() => {
 
   it('should return 1 when done',() => {
     let testQueue = new Queue();
-    expect(testQueue.length).toEqual(1);
-    console.log(1);
-
+    expect(testQueue.length+1).toBe(1);
   });
+});
 
 
   it('should return 1,2,3', () => {
@@ -28,7 +27,7 @@ describe('queue testing',() => {
   });
 
 
-  it('Should have correctly ordered the 3 things we pushed into the stack', (done) => {
+  it('Should have correctly ordered the 3 things we pushed into the stack', () => {
     let testQueue = new Queue();
     testQueue.enqueue(1);
     testQueue.enqueue(3);
@@ -37,17 +36,3 @@ describe('queue testing',() => {
     expect(testQueue[1]).toBe(3);
 
   });
-
-
-  it('Should dequeue log 1,2,3', () => {
-    let testQueue = new Queue();
-    queueTest.enqueue(1);
-    queueTest.enqueue(3);
-
-    expect(testQueue.length).toEqual(2);
-    expect(testQueue._array[0]).toEqual("hello");
-
-  });
-
-
-});

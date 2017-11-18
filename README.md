@@ -1,6 +1,118 @@
 ![cf](http://i.imgur.com/7v5ASc8.png) lab 20 - Stacks and Queues Data Structures
 ====
 
+## NOTES & INSTRUCTIONS FOR RUNNING MY LAB  
+
+#to initialize npm and install jest for testing run this command in the terminal
+$ npm init --y && npm i --save-dev jest
+//in the package.json, specifying jest as a tool for testing
+//default:
+"scripts": {
+  "test": "echo \"Error: no test specified\" && exit 1"
+},
+//updated:
+"scripts": {
+  "test": "jest"
+},
+
+..................................................................
+
+// stack-factory.js //
+
+`'use strict';
+
+//this is a function, not a class, so it must be called in the stack.test.js
+module.exports = () => {
+  let stack = new Array();
+
+  return {
+    push: function(value) {
+      stack.push(value);
+    },
+    pop: function() {
+      return stack.pop();
+    }
+  };
+};`
+
+
+#HOW TO TEST STACK-FACTORY.JS
+
+`'use strict';
+
+//stack-factory.js is exporting a function that returns 2 methods: push and pop, which can be called below in this test
+
+//requiring stack-factory.js below so I can test it
+const stackFactory = require('../stack-factory');
+
+describe('Stack Factory', () => {
+  it('should implement last in first out functionality', () => {
+
+    //I am calling stackFactory(); because stack-factory.js is exporting a function, and not a class
+
+    let testStackFactory = stackFactory();
+
+    testStackFactory.push('a');
+    testStackFactory.push('b');
+    testStackFactory.push('c');
+
+    expect(testStackFactory.pop()).toEqual('c');
+    expect(testStackFactory.pop()).toEqual('b');
+    expect(testStackFactory.pop()).toEqual('a');
+  });
+});`
+
+...................................................................
+
+// stack-constructor.js //
+
+
+`'use strict';
+
+module.exports = class stack {
+  constructor() {
+    this.length = 0;
+  }
+
+  push(value) {
+    this[this.length++] = value;
+  }
+
+  pop() {
+    let value = this[this.length -1];
+    delete this[this.length -1];
+    this.length--;
+    return value;
+  }
+};`
+
+
+#HOW TO TEST THE STACK CONSTRUCTOR
+
+`'use strict';
+
+//stack-constructor.js is exporting the class stack
+const stackConstructor = require('../stack-constructor');
+
+describe('Stack Contructor', () => {
+  it('should implement last in first out functionality', () => {
+
+    //Because the stack-constructor.js is exporting the class stack and not a function, I have to make a new stackConstructor() instead of calling the function
+
+    let testStack = new stackConstructor();
+
+    testStack.push('a');
+    testStack.push('b');
+    testStack.push('c');
+
+    expect(testStack.pop()).toEqual('c');
+    expect(testStack.pop()).toEqual('b');
+    expect(testStack.pop()).toEqual('a');
+  });
+});`
+
+...................................................................
+
 ## To Submit this Assignment
   * fork this repository
   * write all of your code in a directory named `lab-` + `<your name>` **e.g.** `lab-duncan`

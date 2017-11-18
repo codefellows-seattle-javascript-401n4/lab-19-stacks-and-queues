@@ -1,0 +1,18 @@
+'use strict';
+
+const queueSll = require('../queue-sll');
+
+describe('Queue Sll', () => {
+  it('should implement first in first out functionality', () => {
+
+    let testQueue = queueSll();
+
+    testQueue.enqueue('x');
+    testQueue.enqueue('y');
+    testQueue.enqueue('z');
+
+    expect(testQueue.dequeue()).toEqual('x');
+    expect(testQueue.dequeue()).toEqual('y');
+    expect(testQueue.dequeue()).toEqual('z');
+  });
+});

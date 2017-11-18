@@ -16,24 +16,5 @@ module.exports = class queue {
     this.array.shift();
 
     return value;
-    // let str = "";
-    // for(let i = 0; i < this.length; i++) {
-    //   str += this[i] + ", ";
-    // }
-    // console.log("queue before delete: " + str);
-    // console.log("==============================================");
-    // delete this[0];
-    //
-    //
-    // //console.log(this[0] + 'head');
-    // this.length--;
-    //
-    // str = "";
-    // for(let i = 0; i < this.length; i++) {
-    //   str += this[i] + ", ";
-    // }
-    // console.log("queue after delete: " + str);
-    // console.log("==============================================");
-
   }
 };

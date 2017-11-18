@@ -6,10 +6,10 @@ module.exports = class queue {
   }
 
   enqueue(value) {
-    this.queue.enqueue(value);
+    this.queue.push(value);
   }
 
   dequeue() {
-    return this.queue.dequeue();
+    return this.queue.shift();
   }
 };

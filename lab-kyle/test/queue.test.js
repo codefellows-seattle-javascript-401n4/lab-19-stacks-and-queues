@@ -1,6 +1,7 @@
 'use strict';
 
 const expect = require('expect');
+require('jest');
 
 let Queue = require('../lib/queue');
 

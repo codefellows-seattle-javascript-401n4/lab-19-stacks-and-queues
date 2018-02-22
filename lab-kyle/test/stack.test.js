@@ -2,7 +2,7 @@
 
 const expect = require('expect')
 
-const Stack = require('./stack.js');
+const Stack = require('../lib/stack.js');
 
 let stack = new Stack();
 

@@ -1,0 +1,38 @@
+{
+  "name": "lab-19-stacks-and-queues",
+  "version": "1.0.0",
+  "description": "![cf](http://i.imgur.com/7v5ASc8.png) lab 20 - Stacks and Queues Data Structures ====",
+  "main": "index.js",
+  "dependencies": {
+    "bcrypt": "^1.0.3",
+    "express": "^4.16.2",
+    "jest-cli": "^21.2.1",
+    "mongo": "^0.1.0",
+    "mongoose": "^4.13.2",
+    "react-superagent": "^1.1.1",
+    "superagent": "^3.8.1"
+  },
+  "devDependencies": {
+    "eslint": "^4.11.0",
+    "jest": "^21.2.1"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/namgungssi/lab-19-stacks-and-queues.git"
+  },
+  "keywords": [
+    "[]"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/namgungssi/lab-19-stacks-and-queues/issues"
+  },
+  "homepage": "https://github.com/namgungssi/lab-19-stacks-and-queues#readme",
+  "directories": {
+    "test": "test"
+  }
+}

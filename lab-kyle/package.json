@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/krichey15/lab-19-stacks-and-queues#readme",
   "devDependencies": {
+    "expect": "^22.4.0",
     "jest": "^22.4.0"
   }
 }
